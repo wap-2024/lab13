@@ -1,0 +1,28 @@
+GET http://localhost:3000/books/1
+
+###
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "title": "The Catcher in the Rye",
+  "ISBN": "978-0316769488",
+  "publishedDate": "1951-07-16",
+  "author": "J.D. Salinger"
+}
+
+###
+PUT http://localhost:3000/books/1
+Content-Type: application/json
+
+{
+  "title": "Title_updated",
+  "ISBN": "ISBN_updated",
+  "publishedDate": "1951-07-16",
+  "author": "J.D. Salinger"
+}
+
+
+###
+DELETE  http://localhost:3000/books/6
+Content-Type: application/json
